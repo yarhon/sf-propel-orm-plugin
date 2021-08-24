@@ -40,8 +40,6 @@ class sfPropelORMPluginConfiguration extends sfPluginConfiguration
       sfConfig::get('sf_phing_path').'/classes',
     ));
 
-    require_once 'runtime/lib/Propel.php';
-
     if (!Propel::isInit())
     {
       if (sfConfig::get('sf_debug') && sfConfig::get('sf_logging_enabled'))
